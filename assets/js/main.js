@@ -31,3 +31,16 @@ const stopWatch = {
   },
 };
 stopWatch.increase().increase().increase().decrease().read();
+
+// --------- 3 ---------
+function sortArrayAge(arr) {
+  arr.sort((b, a) => b.age - a.age);
+  return arr;
+}
+
+const users = [
+  { name: "Jonas", age: 26 },
+  { name: "Caty", age: 18 },
+  { name: "Michel", age: 30 },
+];
+console.log(sortArrayAge(users));
