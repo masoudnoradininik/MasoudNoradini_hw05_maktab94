@@ -44,3 +44,14 @@ const users = [
   { name: "Michel", age: 30 },
 ];
 console.log(sortArrayAge(users));
+
+// --------- 4 ---------
+
+// --------- 5 ---------
+
+const ask = (question, yes, no) => (confirm(question) ? yes() : no());
+ask(
+  "Do you agree?",
+  () => alert("You agreed."),
+  () => alert("You canceled the execution.")
+);
